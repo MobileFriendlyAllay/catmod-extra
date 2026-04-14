@@ -1,3 +1,7 @@
+/*
+  -Word Power-
+  This extension was created by MobileFriendlyAllay (https://scratch.mit.edu/users/mobilefriendlyallay) and imported to CatMod (https://mobilefriendlyallay.github.io/catmod/editor.html)
+*/
 (function(Scratch) {
   'use strict';
 
