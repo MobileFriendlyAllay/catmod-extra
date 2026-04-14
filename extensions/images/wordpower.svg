@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Square matching the requested color -->
+    <rect width="512" height="512" rx="40" fill="#4a90e2"/>
+    
+    <!-- Dictionary/Document Base -->
+    <path d="M140 100h180l60 60v252c0 22-18 40-40 40H140c-22 0-40-18-40-40V140c0-22 18-40 40-40z" fill="none" stroke="white" stroke-width="20"/>
+    
+    <!-- Text Lines (Simulating dictionary entries) -->
+    <line x1="160" y1="180" x2="320" y2="180" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    <line x1="160" y1="230" x2="280" y2="230" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    <line x1="160" y1="280" x2="300" y2="280" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Autocorrect Checkmark Circle -->
+    <circle cx="360" cy="360" r="70" fill="#4a90e2" stroke="white" stroke-width="15"/>
+    
+    <!-- The Checkmark (Success/Correction) -->
+    <path d="M320 360l25 25 50-50" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Corner Fold for Document -->
+    <path d="M320 100v60h60" fill="none" stroke="white" stroke-width="15" stroke-linejoin="round"/>
+</svg>
