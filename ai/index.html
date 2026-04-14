@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatMod AI Project Reviewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- JSZip for extracting project files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f1f5f9;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .glass-container {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header-link {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .header-link:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+        .input-box {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            width: 100%;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+        }
+        .preset-btn {
+            background-color: #334155;
+            color: #cbd5e1;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .preset-btn:hover {
+            background-color: #475569;
+            border-color: #64748b;
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <header class="max-w-7xl mx-auto w-full mb-10 mt-4">
+        <h1 class="text-3xl font-extrabold tracking-tight text-center">
+            <a href="https://mobilefriendlyallay.github.io/catmod/editor.html" target="_BLANK" class="header-link">CatMod</a> AI Reviewer
+        </h1>
+    </header>
+
+    <main class="w-full">
+        <div class="glass-container">
+            <!-- File Input Area -->
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-slate-400 mb-2">Upload Project (.sb3, .sb2, .pmp, .cmp, .zip)</label>
+                <input type="file" id="fileInput" accept=".sb2,.sb3,.pmp,.cmp,.zip" class="block w-full text-sm text-slate-400
+                    file:mr-4 file:py-2 file:px-4
+                    file:rounded-full file:border-0
+                    file:text-sm file:font-semibold
+                    file:bg-blue-600 file:text-white
+                    hover:file:bg-blue-500 cursor-pointer">
+            </div>
+
+            <!-- Custom Prompt Input -->
+            <div class="flex gap-2 mb-4">
+                <input type="text" id="promptInput" placeholder="Enter your instructions for the AI..." class="input-box">
+                <button id="sendBtn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-xl transition-all shadow-lg active:scale-95">
+                    Send
+                </button>
+            </div>
+
+            <!-- Preset Buttons -->
+            <div class="flex flex-wrap gap-2 mt-6">
+                <button class="preset-btn" onclick="setPrompt('Review this project.')">Review this project.</button>
+                <button class="preset-btn" onclick="setPrompt('Does this project have any issues?')">Does this project have any issues?</button>
+                <button class="preset-btn" onclick="setPrompt('Describe this project.')">Describe this project.</button>
+                <button class="preset-btn" onclick="setPrompt('Is this project good to upload to PenguinMod?')">Good for PenguinMod?</button>
+            </div>
+
+            <p id="status" class="mt-6 text-center text-sm text-slate-500"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
