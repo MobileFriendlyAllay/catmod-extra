@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatMod Extension Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f1f5f9;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        /* Heading Link Style */
+        .header-link {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .header-link:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Simple Header -->
+    <header class="max-w-7xl mx-auto w-full mb-10 mt-4">
+        <h1 class="text-3xl font-extrabold tracking-tight text-center">
+            <a href="https://mobilefriendlyallay.github.io/catmod/editor.html" target="_BLANK" class="header-link">CatMod</a> Extensions
+        </h1>
+    </header>
+
+    <!-- Simple Extension Grid -->
+    <main class="max-w-7xl mx-auto w-full">
+        <div id="extension-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Loading Spinner -->
+            <div class="col-span-full py-20 text-center text-slate-500">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 mb-4"></div>
+                <p>Loading extensions...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to external JS brain -->
+    <script src="gallery.js"></script>
+</body>
+</html>
