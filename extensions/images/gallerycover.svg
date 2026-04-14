@@ -1,0 +1,70 @@
+<div class="catmod-banner-container" style="width: 100%; max-width: 1920px; aspect-ratio: 16/9; overflow: hidden; border-radius: 1rem; border: 2px solid rgba(255,255,255,0.05); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);">
+    <svg width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <!-- Glow Filter for the Character -->
+            <filter id="catGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="25" result="blur" />
+                <feFlood flood-color="#00c3ff" result="color" />
+                <feComposite in="color" in2="blur" operator="in" result="glow" />
+                <feMerge>
+                    <feMergeNode in="glow" />
+                    <feMergeNode in="glow" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+            
+            <!-- Radial Gradient for the background "burst" -->
+            <radialGradient id="auraGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00c3ff" stop-opacity="0.2" />
+                <stop offset="100%" stop-color="#00c3ff" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+
+        <title>CatMod Extension Gallery - Official Banner</title>
+        
+        <!-- Deep Tech Background -->
+        <rect width="1920" height="1080" fill="#0f172a"/>
+        
+        <!-- Grid Pattern Overlay -->
+        <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="1">
+            <path d="M0,0 H1920 M0,100 H1920 M0,200 H1920 M0,300 H1920 M0,400 H1920 M0,500 H1920 M0,600 H1920 M0,700 H1920 M0,800 H1920 M0,900 H1920 M0,1000 H1920"/>
+            <path d="M0,0 V1080 M100,0 V1080 M200,0 V1080 M300,0 V1080 M400,0 V1080 M500,0 V1080 M600,0 V1080 M700,0 V1080 M800,0 V1080 M900,0 V1080 M1000,0 V1080 M1100,0 V1080 M1200,0 V1080 M1300,0 V1080 M1400,0 V1080 M1500,0 V1080 M1600,0 V1080 M1700,0 V1080 M1800,0 V1080 M1900,0 V1080"/>
+        </g>
+    
+        <g transform="translate(960, 500)">
+            <!-- Background Aura -->
+            <circle r="500" fill="url(#auraGradient)" />
+            
+            <!-- Glowing Orbit Rings -->
+            <circle r="460" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.2"/>
+            <circle r="440" fill="none" stroke="#00c3ff" stroke-width="6" stroke-dasharray="20 40" stroke-opacity="0.5"/>
+            <circle r="480" fill="none" stroke="#ff8c1a" stroke-width="2" stroke-dasharray="5 15" stroke-opacity="0.3"/>
+            
+            <!-- Main Character with Glow Effect -->
+            <g transform="translate(-180, -260) scale(3)" filter="url(#catGlow)">
+                <image 
+                    width="122.6" 
+                    height="140.1" 
+                    xlink:href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMjIuNjMwNyIgaGVpZ2h0PSIxNDAuMTIwOTMiIHZpZXdCb3g9IjAsMCwxMjIuNjMwNywxNDAuMTIwOTMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODkuMjU0ODksLTEwOS4yODAwNikiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjYyLjE2NjY3LDE4MC40MTUwOGMwLDAgOC4zMzMyMSw0MS4wMDUwNSAxNi4wODMzNiw1MC45MzQ5NGM4LjIyMTk1LDEwLjUzNDM4IDMxLjkxNjY0LDEwLjU2NTA2IDMxLjkxNjY0LDEwLjU2NTA2bDEsLTVjMCwwIC0xOC4zMDA0NiwtMS43MTU0MiAtMjUuNzE4MTYsLTEwLjgyMjNjLTkuMDc3OTksLTExLjE0NTI2IC0xOS4yODE4NCwtNTEuMTc3NyAtMTkuMjgxODQsLTUxLjE3NzciIGZpbGw9IiMyMDIwMjAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxnIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJidXR0Ij48cGF0aCBkPSJNMjU1LjE2NjY3LDIzNS43Mzk0OHYtNTQuNjQ4ODFoMTR2NTQuNjQ4ODF6IiBmaWxsPSIjNDA0MDQwIi8+PHBhdGggZD0iTTI0MC45MTY2NywyNDguODAwOTl2LTY3LjcxMDMyaDIyLjkxNzA3YzAsMCAwLDMyLjExMjUxIDAsNDQuNTU1NTZjMCw4Ljk3MDA3IDAsMjMuMTU0NzYgMCwyMy4xNTQ3NnoiIGZpbGw9IiM4MDgwODAiLz48cGF0aCBkPSJNMjExLjgzMzMzLDIzNS43Mzk0OHYtNTQuNjQ4ODFoMTR2NTQuNjQ4ODF6IiBmaWxsPSIjNDA0MDQwIi8+PHBhdGggZD0iTTIxNy45OTk2LDI0OC44MDA5OXYtNjcuNzEwMzJoMjIuOTE3MDd2NjcuNzEwMzJ6IiBmaWxsPSIjODA4MDgwIi8+PC9nPjxnPjxwYXRoIGQ9Ik0yNjcuOTU4MzMsMTMzLjQ0OTAxbDIxLjc1LC0yMi4yNWwtOC43NSwzOS43NSIgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aW5kZXgmcXVvdDs6bnVsbH0iIGZpbGw9IiM4MDgwODAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xOTkuMDQxNjcsMTUwLjk0OTAxbC04Ljc1LC0zOS43NWwyMS43NSwyMi4yNSIgZmlsbD0iIzgwODA4MCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTI4Mi45MTY2NywxNTcuOTI3NjhjMCwxNy42NjI5OCAtMTguODA0MDQsMzEuOTgxNjUgLTQyLDMxLjk4MTY1Yy0yMy4xOTU5NiwwIC00MiwtMTQuMzE4NjcgLTQyLC0zMS45ODE2NWMwLC0xNy42NjI5OCAxOC44MDQwNCwtMzEuOTgxNjYgNDIsLTMxLjk4MTY2YzIzLjE5NTk2LDAgNDIsMTQuMzE4NjggNDIsMzEuOTgxNjZ6IiBmaWxsPSIjODA4MDgwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yMzEuNzA4MzMsMTUwLjk0OTAxYzAsNi41MzUzNyAtNC40MDI1MywxMS44MzMzMyAtOS44MzMzMywxMS44MzMzM2MtNS40MzA4LDAgLTkuODMzMzQsLTUuMjk3OTYgLTkuODMzMzQsLTExLjgzMzMzYzAsLTYuNTM1MzcgNC40MDI1NCwtMTEuODMzMzQgOS44MzMzNCwtMTEuODMzMzRjNS40MzA4LDAgOS44MzMzMyw1LjI5Nzk3IDkuODMzMzMsMTEuODMzMzR6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yNjcuOTU4MzMsMTUwLjk0OTAxYzAsNi41MzUzNyAtNC40MDI1NCwxMS44MzMzNCAtOS44MzMzNCwxMS44MzMzNGMtNS40MzA4LDAgLTkuODMzMzMsLTUuMjk3OTcgLTkuODMzMzMsLTExLjgzMzM0YzAsLTYuNTM1MzcgNC40MDI1MywtMTEuODMzMzQgOS44MzMzMywtMTEuODMzMzRjNS40MzA4LDAgOS44MzMzNCw1LjI5Nzk3IDkuODMzMzQsMTEuODMzMzR6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yMjQuNTQxNjcsMTUzLjYxNTY3YzAsMS40NzI3NiAtMS4xOTM5MSwyLjY2NjY2IC0yLjY2NjY2LDIuNjY2NjZjLTEuNDcyNzYsMCAtMi42NjY2NywtMS4xOTM5MSAtMi42NjY2NywtMi42NjY2NmMwLC0xLjQ3Mjc2IDEuMTkzOTEsLTIuNjY2NjYgMi42NjY2NywtMi42NjY2NmMxLjQ3Mjc2LDAgMi42NjY2NiwxLjE5MzkxIDIuNjY2NjYsMi42NjY2NnoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yNjAuNzkxNjcsMTUzLjYxNTY3YzAsMS40NzI3NiAtMS4xOTM5MSwyLjY2NjY2IC0yLjY2NjY3LDIuNjY2NjZjLTEuNDcyNzYsMCAtMi42NjY2NywtMS4xOTM5MSAtMi42NjY2NywtMi42NjY2NmMwLC0xLjQ3Mjc2IDEuMTkzOTEsLTIuNjY2NjYgMi42NjY2NywtMi42NjY2NmMxLjQ3Mjc2LDAgMi42NjY2NywxLjE5MzkxIDIuNjY2NjcsMi42NjY2NnoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yMzIuNjE2NjcsMTczLjAwNzM0YzAsMCAwLjM2Mjc2LDcuNjk3MzkgOC40LDcuN2M4LjIwNzIsMC4wMDI2NyA4LjIsLTYuOTg3MDMgOC4yLC02Ljk4NzAzIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQwLjc4MzMzLDE4MC4yMDczNGwtMC4xLC0xMy4xIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQ0LjU4MzMzLDE2NC44NDA2N2MwLDEuNDcyNzYgLTEuNjU2NTQsMi42NjY2NiAtMy43LDIuNjY2NjZjLTIuMDQzNDUsMCAtMy43LC0xLjE5MzkxIC0zLjcsLTIuNjY2NjZjMCwtMS40NzI3NiAxLjY1NjU1LC0yLjY2NjY2IDMuNywtMi42NjY2NmMyLjA0MzQ1LDAgMy43LDEuMTkzOTEgMy43LDIuNjY2NjZ6IiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMCIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48L2c+PC9nPjwvZz48L3N2Zz4="
+                />
+            </g>
+            
+            <!-- Branding Block with Gallery Text -->
+            <g transform="translate(0, 310)">
+                <rect x="-350" y="-80" width="700" height="180" rx="40" fill="#ff8c1a" filter="drop-shadow(0 15px 25px rgba(255,140,26,0.4))"/>
+                <text x="0" y="0" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="95" fill="#ffffff" letter-spacing="-2">CATMOD</text>
+                <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="30" fill="#ffffff" opacity="0.9" letter-spacing="4">EXTENSION GALLERY</text>
+            </g>
+            
+            <!-- Tech Floating Icons -->
+            <g transform="translate(-550, -350)" fill="#00c3ff" stroke="#ffffff" stroke-width="2" opacity="0.8">
+                <rect width="100" height="100" rx="20"/>
+                <path d="M 50,25 V 75 M 25,50 H 75" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(450, -350)" fill="#64748b" stroke="#ffffff" stroke-width="2" opacity="0.8">
+                <rect width="100" height="100" rx="20"/>
+                <path d="M 35,35 L 65,65 M 65,35 L 35,65" stroke-width="8" stroke-linecap="round"/>
+            </g>
+        </g>
+    </svg>
+</div>
