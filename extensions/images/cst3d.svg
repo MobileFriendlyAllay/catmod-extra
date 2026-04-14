@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Square (Darkest Blue) -->
+    <rect width="512" height="512" rx="40" fill="#1b2d94"/>
+    
+    <!-- Isometric 3D Cube Design -->
+    <!-- Right Face -->
+    <path d="M256 160 l140 70 v140 l-140 70 z" fill="#2439ad"/>
+    
+    <!-- Left Face -->
+    <path d="M256 160 l-140 70 v140 l140 70 z" fill="#1b2d94" opacity="0.5"/>
+    
+    <!-- Top Face -->
+    <path d="M256 70 l140 70 l-140 70 l-140 -70 z" fill="#2a47e8"/>
+
+    <!-- Transformation Arrows (Representing Sprite Conversion) -->
+    <path d="M180 280 l30 15 l-30 15" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <path d="M300 280 l30 15 l-30 15" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    
+    <!-- Center Icon Label -->
+    <text x="50%" y="245" font-family="Arial, sans-serif" font-weight="bold" font-size="64" fill="white" text-anchor="middle" style="pointer-events: none;">3D</text>
+    
+    <!-- Glossy Overlay -->
+    <path d="M40 40 q0 -20 20 -20 h392 q20 0 20 20 v100 q-256 50 -432 0 z" fill="white" opacity="0.05"/>
+</svg>
