@@ -2,42 +2,47 @@
     <!-- Background Square (Default Extension Green) -->
     <rect width="512" height="512" rx="40" fill="#0fbd8c"/>
     
-    <!-- Unified Chain Link Icon (The fixed URL/Connection symbol) -->
-    <g transform="translate(100, 140)">
+    <!-- Unified Chain Link Icon (URL/Connection symbol) -->
+    <g transform="translate(80, 120) scale(0.9)">
         <!-- Top Half of Link -->
-        <path d="M40 80 v-20 c0-22 18-40 40-40 h60 c22 0 40 18 40 40 v20" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+        <path d="M40 80 v-20 c0-22 18-40 40-40 h60 c22 0 40 18 40 40 v20" fill="none" stroke="white" stroke-width="28" stroke-linecap="round"/>
         <!-- Bottom Half of Link -->
-        <path d="M40 120 v20 c0 22 18 40 40 40 h60 c22 0 40-18 40-40 v-20" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+        <path d="M40 120 v20 c0 22 18 40 40 40 h60 c22 0 40-18 40-40 v-20" fill="none" stroke="white" stroke-width="28" stroke-linecap="round"/>
         <!-- Connection Bar -->
         <rect x="75" y="90" width="70" height="20" rx="10" fill="white"/>
     </g>
     
-    <!-- Encoding/Conversion Representation (The "Hello%20World" logic) -->
-    <g transform="translate(280, 240)">
-        <!-- Document/Data Base -->
-        <rect width="140" height="180" rx="15" fill="none" stroke="white" stroke-width="16" opacity="0.9"/>
+    <!-- Browser/URL Address Bar Representation -->
+    <g transform="translate(180, 220)">
+        <!-- Browser Window Frame -->
+        <rect x="0" y="0" width="280" height="180" rx="15" fill="none" stroke="white" stroke-width="16"/>
+        <line x1="0" y1="50" x2="280" y2="50" stroke="white" stroke-width="12"/>
         
-        <!-- Text Lines representing Encoding -->
-        <!-- "Hello" -->
-        <rect x="30" y="40" width="80" height="10" rx="5" fill="white"/>
+        <!-- Browser "Dots" -->
+        <circle cx="30" cy="25" r="8" fill="white" opacity="0.5"/>
+        <circle cx="60" cy="25" r="8" fill="white" opacity="0.5"/>
         
-        <!-- The "%20" Highlight (The space conversion) -->
-        <g transform="translate(25, 75)">
-            <rect width="90" height="30" rx="8" fill="white" opacity="0.2"/>
-            <text x="45" y="22" font-family="monospace" font-weight="bold" font-size="20" fill="white" text-anchor="middle">%20</text>
+        <!-- The URL String with Encoding -->
+        <g transform="translate(20, 80)">
+            <!-- google.com/search?q= -->
+            <text x="0" y="20" font-family="monospace" font-size="14" fill="white" opacity="0.8">google.com/search?q=</text>
+            
+            <!-- Hello%20world highlight -->
+            <g transform="translate(0, 40)">
+                <rect width="210" height="40" rx="8" fill="white" opacity="0.15"/>
+                <text x="105" y="27" font-family="monospace" font-weight="bold" font-size="18" fill="white" text-anchor="middle">Hello<tspan fill="#ffcc00">%20</tspan>world</text>
+            </g>
         </g>
-        
-        <!-- "World" -->
-        <rect x="30" y="130" width="80" height="10" rx="5" fill="white"/>
     </g>
 
-    <!-- Data Blob / Compression Symbol (Bottom Left) -->
-    <g transform="translate(80, 340)">
-        <path d="M20 60 q40-60 80 0 t80 0" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
-        <circle cx="40" cy="40" r="15" fill="white" opacity="0.4"/>
-        <circle cx="140" cy="20" r="10" fill="white" opacity="0.4"/>
+    <!-- Data/Blob Icon (Bottom Left) -->
+    <g transform="translate(60, 360)">
+        <!-- A "Data Block" or "Blob" -->
+        <path d="M20 20 h60 v60 h-60 Z" fill="none" stroke="white" stroke-width="12" stroke-linejoin="round" opacity="0.7"/>
+        <circle cx="100" cy="50" r="10" fill="white" opacity="0.5"/>
+        <path d="M120 50 h40" stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
     </g>
     
-    <!-- Clean Glossy Finish -->
-    <path d="M40 40 q0-20 20-20 h392 q20 0 20 20 v80 c-150 40-300 40-432 0 z" fill="white" opacity="0.05"/>
+    <!-- Subtle Glossy Overlay -->
+    <path d="M40 40 q0-20 20-20 h392 q20 0 20 20 v60 c-180 30-320 30-432 0 z" fill="white" opacity="0.05"/>
 </svg>
