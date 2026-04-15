@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Square -->
+    <rect width="512" height="512" rx="40" fill="#4a90e2"/>
+    
+    <!-- Main Clipboard Board -->
+    <rect x="140" y="100" width="232" height="312" rx="15" fill="none" stroke="white" stroke-width="20"/>
+    
+    <!-- Clipboard Clip (Top) -->
+    <path d="M210 100 v-20 c0-10 8-18 18-18 h56 c10 0 18 8 18 18 v20" fill="none" stroke="white" stroke-width="20" stroke-linecap="round"/>
+    
+    <!-- Text Representation (Three lines) -->
+    <line x1="180" y1="180" x2="332" y2="180" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    <line x1="180" y1="230" x2="300" y2="230" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    <line x1="180" y1="280" x2="320" y2="280" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Image/Media Representation (Floating Frame) -->
+    <g transform="translate(280, 300)">
+        <rect width="110" height="90" rx="10" fill="#4a90e2" stroke="white" stroke-width="12"/>
+        <!-- Simple Mountain/Sun icon inside the frame -->
+        <path d="M15 75 l30 -40 l20 20 l25 -30 l20 50 Z" fill="none" stroke="white" stroke-width="8" stroke-linejoin="round"/>
+        <circle cx="85" cy="25" r="8" fill="white"/>
+    </g>
+    
+    <!-- Detection/Status Pulse (Representing the Detectors) -->
+    <circle cx="390" cy="345" r="10" fill="white">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+</svg>
