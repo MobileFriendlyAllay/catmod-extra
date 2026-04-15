@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Square (Default Extension Green) -->
+    <rect width="512" height="512" rx="40" fill="#0fbd8c"/>
+    
+    <!-- Link/URL Representation (Encoding) -->
+    <g transform="translate(140, 120) scale(1.2)">
+        <path d="M110 50 a40 40 0 0 0 -40 40 v20 a40 40 0 0 0 80 0 v-20 a40 40 0 0 0 -40 -40 Z" fill="none" stroke="white" stroke-width="18" stroke-linecap="round"/>
+        <path d="M70 120 a40 40 0 0 0 80 0" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" opacity="0.6"/>
+        <path d="M110 130 a40 40 0 0 0 40 -40 v-20 a40 40 0 0 0 -80 0 v20 a40 40 0 0 0 40 40 Z" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" transform="rotate(180, 110, 130) translate(0, -60)"/>
+    </g>
+    
+    <!-- Data/Blob Container (Compression & Management) -->
+    <rect x="180" y="280" width="152" height="120" rx="15" fill="none" stroke="white" stroke-width="20"/>
+    <path d="M180 320 h152" fill="none" stroke="white" stroke-width="12" opacity="0.5"/>
+    
+    <!-- Pulse/Spark (Encoding Logic Indicator) -->
+    <path d="M380 180 l10 30 l30 10 l-30 10 l-10 30 l-10 -30 l-30 -10 l30 -10 Z" fill="white">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Percentage Symbol (Representing %20 encoding) -->
+    <g transform="translate(100, 320) scale(0.6)" stroke="white" stroke-width="25">
+        <circle cx="40" cy="40" r="25" fill="none"/>
+        <line x1="120" y1="20" x2="20" y2="120" stroke-linecap="round"/>
+        <circle cx="100" cy="100" r="25" fill="none"/>
+    </g>
+    
+    <!-- Wave/Blob Line -->
+    <path d="M360 380 q20 -40 40 0 t40 0" fill="none" stroke="white" stroke-width="15" stroke-linecap="round"/>
+</svg>
