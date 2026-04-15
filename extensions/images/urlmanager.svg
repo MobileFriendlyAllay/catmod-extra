@@ -2,29 +2,42 @@
     <!-- Background Square (Default Extension Green) -->
     <rect width="512" height="512" rx="40" fill="#0fbd8c"/>
     
-    <!-- Link/URL Representation (Encoding) -->
-    <g transform="translate(140, 120) scale(1.2)">
-        <path d="M110 50 a40 40 0 0 0 -40 40 v20 a40 40 0 0 0 80 0 v-20 a40 40 0 0 0 -40 -40 Z" fill="none" stroke="white" stroke-width="18" stroke-linecap="round"/>
-        <path d="M70 120 a40 40 0 0 0 80 0" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" opacity="0.6"/>
-        <path d="M110 130 a40 40 0 0 0 40 -40 v-20 a40 40 0 0 0 -80 0 v20 a40 40 0 0 0 40 40 Z" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" transform="rotate(180, 110, 130) translate(0, -60)"/>
+    <!-- Unified Chain Link Icon (The fixed URL/Connection symbol) -->
+    <g transform="translate(100, 140)">
+        <!-- Top Half of Link -->
+        <path d="M40 80 v-20 c0-22 18-40 40-40 h60 c22 0 40 18 40 40 v20" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+        <!-- Bottom Half of Link -->
+        <path d="M40 120 v20 c0 22 18 40 40 40 h60 c22 0 40-18 40-40 v-20" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+        <!-- Connection Bar -->
+        <rect x="75" y="90" width="70" height="20" rx="10" fill="white"/>
     </g>
     
-    <!-- Data/Blob Container (Compression & Management) -->
-    <rect x="180" y="280" width="152" height="120" rx="15" fill="none" stroke="white" stroke-width="20"/>
-    <path d="M180 320 h152" fill="none" stroke="white" stroke-width="12" opacity="0.5"/>
-    
-    <!-- Pulse/Spark (Encoding Logic Indicator) -->
-    <path d="M380 180 l10 30 l30 10 l-30 10 l-10 30 l-10 -30 l-30 -10 l30 -10 Z" fill="white">
-        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
-    </path>
+    <!-- Encoding/Conversion Representation (The "Hello%20World" logic) -->
+    <g transform="translate(280, 240)">
+        <!-- Document/Data Base -->
+        <rect width="140" height="180" rx="15" fill="none" stroke="white" stroke-width="16" opacity="0.9"/>
+        
+        <!-- Text Lines representing Encoding -->
+        <!-- "Hello" -->
+        <rect x="30" y="40" width="80" height="10" rx="5" fill="white"/>
+        
+        <!-- The "%20" Highlight (The space conversion) -->
+        <g transform="translate(25, 75)">
+            <rect width="90" height="30" rx="8" fill="white" opacity="0.2"/>
+            <text x="45" y="22" font-family="monospace" font-weight="bold" font-size="20" fill="white" text-anchor="middle">%20</text>
+        </g>
+        
+        <!-- "World" -->
+        <rect x="30" y="130" width="80" height="10" rx="5" fill="white"/>
+    </g>
 
-    <!-- Percentage Symbol (Representing %20 encoding) -->
-    <g transform="translate(100, 320) scale(0.6)" stroke="white" stroke-width="25">
-        <circle cx="40" cy="40" r="25" fill="none"/>
-        <line x1="120" y1="20" x2="20" y2="120" stroke-linecap="round"/>
-        <circle cx="100" cy="100" r="25" fill="none"/>
+    <!-- Data Blob / Compression Symbol (Bottom Left) -->
+    <g transform="translate(80, 340)">
+        <path d="M20 60 q40-60 80 0 t80 0" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+        <circle cx="40" cy="40" r="15" fill="white" opacity="0.4"/>
+        <circle cx="140" cy="20" r="10" fill="white" opacity="0.4"/>
     </g>
     
-    <!-- Wave/Blob Line -->
-    <path d="M360 380 q20 -40 40 0 t40 0" fill="none" stroke="white" stroke-width="15" stroke-linecap="round"/>
+    <!-- Clean Glossy Finish -->
+    <path d="M40 40 q0-20 20-20 h392 q20 0 20 20 v80 c-150 40-300 40-432 0 z" fill="white" opacity="0.05"/>
 </svg>
